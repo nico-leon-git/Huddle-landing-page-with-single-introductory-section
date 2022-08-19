@@ -1,0 +1,170 @@
+ :root {
+    --violet: hsl(257, 40%, 49%);
+--soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-image: url(/images/bg-desktop.svg);
+    background-color: var(--violet);
+    background-repeat: no-repeat;
+}
+
+.header {
+    padding: 2.5rem;
+    margin-left: 0.8rem;
+}
+
+.huddle-logo {
+    max-width: 240px;
+}
+
+.flex-container {
+    display: flex;
+    gap: 2.5rem;
+    padding: 2.5rem 3rem 0;
+}
+
+.container-left {
+    padding-left: 0.6rem;
+}
+
+.container-right {
+    padding: 3rem 2rem 0;
+}
+
+.copy__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.copy__paragraph {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    padding-right: 1rem;
+}
+
+.copy__cta-button {
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    width: 38%;
+    border-radius: 3rem;
+    padding: 1em 2em;
+    text-align: center;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.200);
+}
+
+
+.fa {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    margin-left: 1.2rem;
+    border: 2px solid rgba(255, 255, 255, 0.800);
+    border-radius: 50%;
+    padding: 0.5em;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+.social-net-list {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 6rem;
+    list-style: none;
+}
+
+
+.copy__cta-button:hover {
+    background-color: var(--soft-Magenta);
+    color: white;
+}
+
+.fa:hover {
+    color: var(--soft-Magenta);
+    border: 2px solid var(--soft-Magenta);
+}
+
+
+@media screen and (max-width: 1100px) {
+    body {
+        background-image: url(/images/bg-mobile.svg);
+        background-size: contain;
+    }
+    
+    .header {
+        padding: 1.8rem 1.5rem;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 1.5rem;
+    }
+
+    .huddle-logo {
+        width: 45%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+
+    .illustration-mockups {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .container-right {
+        text-align: center;
+        padding: 0;
+    }
+
+    .copy__title {
+        font-size: 1.6rem;
+        padding: 0 0.3em;
+    }
+
+    .copy__paragraph {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1.7rem;
+        padding: 0 0.2em;
+    }
+
+    .copy__cta-button {
+        width: 70%;
+        margin-bottom: 3rem;
+        padding: 1em 0;
+    }
+
+    .fa {
+        font-size: 1rem;
+        padding: 0.5em;
+        margin-left: 0.8rem;
+        height: 35px;
+        width: 35px;
+    }
+
+    .social-net-list {
+        justify-content: center;
+        padding-right: 0.6rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    body {
+        background-size: cover;
+    }
+}
