@@ -59,6 +59,7 @@ body {
     text-decoration: none;
     display: inline-block;
     background-color: white;
+    color: var(--violet);
     width: 38%;
     border-radius: 3rem;
     padding: 1em 2em;
@@ -84,6 +85,7 @@ body {
     justify-content: flex-end;
     padding-right: 6rem;
     list-style: none;
+    padding-top: 1.5rem;
 }
 
 
