@@ -16,7 +16,7 @@ body {
     background-color: var(--violet);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -400px;
+    background-position: -100px;
     min-height: 100vh;
 }
 
